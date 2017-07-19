@@ -1,0 +1,8 @@
+<!-- Components info: https://webdev.dartlang.org/components -->
+<div *ngIf="items.isNotEmpty">
+  <ul>
+      <li *ngFor="let item of items; let i=index">
+        <span (click)="onClick(i)">{{item}}</span>
+      </li>
+  </ul>
+</div>
